@@ -1,0 +1,69 @@
+\documentclass{article}
+
+\usepackage{fontspec}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\setmainfont{AR PL UKai CN}
+
+\XeTeXlinebreaklocale "zh"
+%\XeTeXlinebreakskip = 0pt plus 1pt
+
+\DeclareMathOperator{\rank}{Rank}
+
+\title{2016大数竞赛模拟试题(代数与几何)}
+\author{}
+\date{2016-08-27}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+  \item
+    求以原点为顶点,
+    与$z = 3 x^2 + 3 y^2 + 1$相切的锥面方程.
+  \item
+    设$n$阶方阵$B(t)$与$n$维列向量$b(t)$的每个元素都为关于$t$的实系数多项式.
+    记$B(t)$的行列式为$d(t)$,
+    $B(t)$的第$i$列被$b(t)$替换后的行列式为$d_i(t)$.
+    已知$d(t)$有实根$t_0$,
+    且关于$x$的方程组$B(t_0) x = b(t_0)$是相容的.
+    试证明$d(t),d_1(t),\dotsc,d_n(t)$的最大公因式次数至少为1.
+  \item
+    求行列式
+    \begin{equation}
+      \left|
+      \begin{array}{cccc}
+        \sin \theta_1 & \sin 2 \theta_1 & \cdots & \sin n \theta_1 \\
+        \sin \theta_2 & \sin^2 \theta_2 & \cdots & \sin^n \theta_2 \\
+        \vdots & \vdots & & \vdots \\
+        \sin \theta_n & \sin^2 \theta_n & \cdots & \sin^n \theta_n
+      \end{array}
+      \right|
+    \end{equation}
+  \item
+    设$V$为闭区间$[0,1]$上的所有实值函数在通常加法与数乘意义下构成的实向量空间.
+    试证明$V$中元素$f_1,\dotsc,f_n$线性无关当且仅当存在$a_1,\dotsc,a_n \in [0,1]$使得行列式$\det \left[ f_i(a_j) \right] \neq 0$.
+  \item
+    证明对于任意(可相乘)矩阵, 必有
+    \begin{equation}
+      \rank (AB) + \rank (BC) \leq \rank (ABC) + \rank (B)
+    \end{equation}
+  \item
+    设$V$是$n$维实线性空间, 试证明:
+    \begin{enumerate}
+      \item
+        $V$的任意有限多个真子空间的并不为$V$.
+      \item
+        对于任意的$m>n$,
+        可取得$V$中$m$个向量,
+        使得其中任意$n$个均构成$V$的一组基.
+      \item
+        利用(a)的结果证明(b).
+      \item
+        利用(b)的结果证明(a).
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}
